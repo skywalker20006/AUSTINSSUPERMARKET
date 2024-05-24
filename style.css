@@ -1,0 +1,671 @@
+/* Black bacgkround for the nav bar */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Style the links inside the nav bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active { /*add a color to active link*/
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Make the table container responsive and centered */
+.table-container {
+    overflow-x: auto;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Style the table headers */
+th {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+td { /*style table data*/
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Center text in the price column */
+td:nth-child(2),
+td:nth-child(3) {
+    text-align: center;
+}
+
+/* Style for the table rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Style the product images */
+.product-image {
+    max-width: 100px; /* Ensure images fit within the column */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Additional styles */
+p {
+    margin: 0;
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Centered text */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+/* Flex container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    border-radius: 20px;
+}
+
+/* Style for individual flex items */
+.flex-item {
+    background-color: #f2f2f2; /* Background color for the boxes */
+    border: 1px solid #c10707; /* Border for the boxes */
+    padding: 20px; /* Padding inside the boxes */
+    margin: 10px; /* Margin around the boxes */
+    text-align: center; /* Center-align text inside the boxes */
+    width: calc(33.33% - 20px); /* Set width to one-third of the container width with margin */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    border-radius: 20px;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns with equal width */
+    gap: 10px; /* Gap between grid items */
+}
+
+/* Style for individual grid items */
+.grid-item {
+    border: 1px solid #ccc; /* Border for grid items */
+    padding: 10px; /* Padding inside grid items */
+    text-align: center; /* Center-align text inside grid items */
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for images inside grid items */
+.grid-item img {
+    max-width: 100%; /* Ensure images don't exceed grid item width */
+    height: auto; /* Maintain aspect ratio of images */
+    border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    text-align: left; /* Center-align text */
+    padding: 20px; /* Add padding for better visibility */
+}
+
+/* Info list container */
+.info-list {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background-color: rgba(51, 51, 51, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Align text to the left */
+    border-radius: 20px;
+    backdrop-filter: blur(10px); /* Blur effect */
+}
+
+/* The below CSS is for the ABOUT page */
+
+/* Style for the about image and text section */
+.about-image {
+    position: relative;
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+/* Style for the about text */
+.about-text {
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjust the distance from the right edge */
+    transform: translateY(-50%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Add a gradient to fade the right end */
+    padding: 20px;
+    color: black;
+    max-width: 50%; /* Limit the width of the text */
+    box-sizing: border-box;
+}
+
+/* Style for the about text headings */
+.about-text h2 { 
+    margin-top: 0;
+}
+
+/* Style for the about text paragraphs */
+.about-text p {
+    margin-bottom: 10px;
+}
+
+.about-image {
+    width: 100%; /* Set the width of the container to 100% */
+    height: 300px; /* Set a specific height for the container */
+    overflow: hidden; /* Hide any overflow if the image is larger than the container */
+}
+
+.about-image img {
+    width: 100%; /* Set the width of the image to 100% of its container */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    border-radius: 8px; /* Add a border radius to make it look more like a banner */
+}
+
+.checked {
+    color: orange;
+}
+
+/*Below im gonna apply the css code for the button*/
+
+button {
+    border-radius: 10px; /* Adjust the value to change the roundness */
+    padding: 15px 30px; /* Adjust the padding to increase its size */
+    font-size: 18px; /* Adjust the font size to increase its size */
+    transition-duration: 0.4s; 
+    border: none;
+    background-color:#ddd;
+}
+
+button:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
+}
+
+/* Special button */
+.special-button {
+    position: absolute;
+    bottom: -91%;
+    right: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #ff6600;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*this is the safe file*/
+
+.plain-button {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Optional: to slightly round the edges */
+}
+
+.plain-button:hover {
+    background-color: #f2f2f2; /* Change the background color on hover */
+    border-color: #bbb; /* Change the border color on hover */
+}
+
+/* Style the form container */
+.container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* Style the form */
+  form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  /* Style form labels */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Style form inputs */
+  input[type="text"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style form submit button */
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Style form submit button on hover */
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  /* Style for the date input */
+input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white; /* Set background color */
+    color: #333; /* Set text color */
+  }
+  
+  /* Style for the date input on focus */
+  input[type="date"]:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #4CAF50; /* Change border color on focus */
+  }
+
+  /* Style form labels */
+label {
+    font-weight: bold;
+    display: block; /* Ensures each label is on a new line */
+    margin-bottom: 5px; /* Adds some space below each label */
+}
+
+/* Style the quantity label specifically */
+label[for="ItemQuantity"] {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    /* Add any additional styling you want here */
+    
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .topnav a { /* Stack navigation links vertically */
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .flex-item {
+        width: calc(100% - 20px); /* Set flex items to full width */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
+    }
+
+    .banner-text {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .info-list {
+        width: 80%; /* Adjust width */
+        right: 10%; /* Center it more */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .banner-text {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .info-list {
+        width: 90%; /* Adjust width */
+        right: 5%; /* Center it more */
+    }
+}
+
+/*MOBILE RESPONSIVENESS FOR THE ABOUT PAGE*/
+
+/* Responsive design for small screens */
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .about-text {
+        width: 100%; /* Make the about text full-width */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .responsive-table th, .responsive-table td {
+        font-size: 12px; /* Reduce font size for smaller screens */
+    }
+}
+
+/*vegetables page mobile respoinsiveness*/
+
+/* Ensure product images fit within the column */
+.product-image {
+    max-width: 100px; /* Ensure images fit within the column */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Centered text on banner image */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+/* Flex container adjustments */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    border-radius: 20px;
+}
+
+/* Grid container for product display */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns with equal width */
+    gap: 10px; /* Gap between grid items */
+}
+
+/* Style for individual grid items */
+.grid-item {
+    border: 1px solid #ccc; /* Border for grid items */
+    padding: 10px; /* Padding inside grid items */
+    text-align: center; /* Center-align text inside grid items */
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* Box shadow for grid items */
+}
+
+/* Style the product images */
+.grid-item img {
+    max-width: 100%; /* Ensure images fit within the grid item */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Media query for screens with a max width of 768px */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+/* Media query for screens with a max width of 480px */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
+/* Additional styling for responsiveness */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*Mobile responsiveness for the vegetables page
+
+/* Ensure product images fit within the column */
+.product-image {
+    max-width: 100px; /* Ensure images fit within the column */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Centered text on banner image */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+/* Flex container adjustments */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    border-radius: 20px;
+}
+
+/* Grid container for product display */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns with equal width */
+    gap: 10px; /* Gap between grid items */
+}
+
+/* Style for individual grid items */
+.grid-item {
+    border: 1px solid #ccc; /* Border for grid items */
+    padding: 10px; /* Padding inside grid items */
+    text-align: center; /* Center-align text inside grid items */
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* Box shadow for grid items */
+}
+
+/* Style the product images */
+.grid-item img {
+    max-width: 100%; /* Ensure images fit within the grid item */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Media query for screens with a max width of 768px */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+/* Media query for screens with a max width of 480px */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
+/* Additional styling for responsiveness */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*cosmetics page mobile responsiveness*/
+
+/* Add mobile responsiveness using media queries */
+
+/* General adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust top navigation links for smaller screens */
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Adjust width and position of info-list container */
+    .info-list {
+        width: 80%; /* Adjust width */
+        right: 10%; /* Center it more */
+    }
+
+    /* Adjust font size for banner text */
+    .banner-text {
+        font-size: 20px; /* Adjust font size */
+    }
+}
+
+/* Further adjustments for even smaller screens */
+@media only screen and (max-width: 480px) {
+    /* Adjust width and position of info-list container */
+    .info-list {
+        width: 90%; /* Adjust width */
+        right: 5%; /* Center it more */
+    }
+
+    /* Adjust font size for banner text */
+    .banner-text {
+        font-size: 18px; /* Adjust font size */
+    }
+}
+
+
+/*mobile res for the order page*/
+
+/* Add mobile responsiveness using media queries */
+
+/* General adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust top navigation links for smaller screens */
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Adjust width and position of form container */
+    .container {
+        width: 80%; /* Adjust width */
+        margin: auto;
+    }
+
+    /* Adjust font size for form labels */
+    label {
+        font-size: 14px;
+    }
+
+    /* Adjust width of form inputs */
+    input[type="text"],
+    input[type="number"],
+    select,
+    input[type="date"] {
+        width: 100%;
+    }
+}
+
+/* Further adjustments for even smaller screens */
+@media only screen and (max-width: 480px) {
+    /* Adjust width and position of form container */
+    .container {
+        width: 90%; /* Adjust width */
+    }
+
+    /* Adjust font size for form labels */
+    label {
+        font-size: 12px;
+    }
+
+    /* Adjust padding for form inputs */
+    input[type="text"],
+    input[type="number"],
+    select,
+    input[type="date"] {
+        padding: 8px;
+    }
+}
+
+/*Mobile responsiveness for the loyalty page*/
+
+/* General adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    .container img {
+        width: 100%; /* Adjust width of banner image */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .flex-item {
+        width: calc(50% - 20px); /* Set flex items to half width with margin */
+    }
+}
+
+/* Further adjustments for even smaller screens */
+@media only screen and (max-width: 480px) {
+    .container img {
+        width: 100%; /* Adjust width of banner image */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .flex-item {
+        width: calc(100% - 20px); /* Set flex items to full width with margin */
+    }
+}
